@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+
+<body bgcolor="#7fffd4">
+<center>
+<form action="./cal" method="post">
+    {%csrf_token%}
+    <label>Enter First Number: </label><br>
+    <input type="text" name="t1"><br>
+    <label>Enter First Number: </label><br>
+    <input type="text" name="t2"><br><br>
+    <input type="submit" name="op" value="ADD">
+    <input type="submit" name="op" value="SUB">
+    <input type="submit" name="op" value="MUL">
+    <input type="submit" name="op" value="DIV">
+</form>
+</center>
+</body>
+</html>
